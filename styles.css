@@ -121,6 +121,11 @@ p {
 
 /* Навигация */
 .header {
+  position: fixed;
+  width: 100%;
+  min-height: 80px;
+  top: 0;
+  left: 0;
   border-bottom: 1px solid #ececec;
 }
 
@@ -538,6 +543,36 @@ p {
 .comunity-link:hover .comunity-icon,
 .comunity-link:focus .comunity-icon {
   fill: var(--text-white-color);
+}
+
+/* Модальное окно */
+.modal {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-box {
+  width: 528px;
+  height: 581px;
+}
+
+.modal-button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1026px;
+  top: 229px;
+  background: var(--main-bcg-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Страница Портфолио */
